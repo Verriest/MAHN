@@ -20,7 +20,21 @@ body {
     overflow:hidden;
       position: relative;      
       height: 100vh;
-      background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
+      /* background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%); */
+
+      /* background: rgb(0,0,0);
+      background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(78,78,78,1) 27%, rgba(27,27,27,1) 100%); */
+
+      /* background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+      background-size:cover; */
+
+      /* background-image: url("../images/back2.jpg");
+      background-size:cover; */
+
+      /* background-image: url("../images/back1bis.jpg");
+      background-size:cover; */
+      background-image: repeating-linear-gradient(60deg, #000 0px, #222 2px, #000 4px);
+
       color: #fff;
   }
   
@@ -581,6 +595,8 @@ body {
   }
   
   
+
+  
   /* MENU RESPONSIVE */
 
   header{
@@ -703,31 +719,42 @@ nav ul li a:hover{
 #presentation-text {
 	display: table-cell;
 	vertical-align: top;
-  text-align: center;
+  text-align: end;
  /* border: 1px solid rgb(184, 184, 184); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  margin: 20px auto;
+  max-width: 1600px;
+  width: 100%;
   
-  
-  width: 800px;
-  margin: 3em;
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
+  overflow: hidden;
 }
 
+
+@media(max-width: 1600px){
+  #presentation-text {
+    text-align: center;
+  }
+}
 
 /*  IMAGE PRINCIPAL  */
 
 .main-image {
   position: absolute;
   bottom: -50px;
-  left: 20vw;
+  left: 300px;
   z-index: 10;
-  width: 40vw;
+  width: clamp(100px, 40vw, 800px);
+
 }
 
-@media(max-width: 768px){
+@media(max-width: 1600px){
   .main-image {
     display: none;
+  }
+  #presentation-text {
+    width: 100%;
   }
 }
 
@@ -736,8 +763,9 @@ nav ul li a:hover{
 
 .elements-social {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   width: 100%;
+  margin-top: 50vh;
 }
 
 .elements-social .element-social {
@@ -746,4 +774,12 @@ nav ul li a:hover{
   border: 1px solid rgb(184, 184, 184);
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media(max-width: 1600px){
+  .elements-social {
+    
+    justify-content: center;
+    margin-top: 10vh;
+  }
 }
