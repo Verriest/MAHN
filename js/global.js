@@ -121,7 +121,7 @@ if (window.addEventListener) {
             if (e.keyCode == do_want[state]) state++;
             else state = 0;
             if (state == 10)
-                window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=14s";
+                window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&t";
         }, true);
     } catch (error) {
         console.error("Error in keydown event listener:", error);
