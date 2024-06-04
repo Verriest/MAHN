@@ -774,11 +774,22 @@ nav ul li a:hover{
   border: 1px solid rgb(184, 184, 184);
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 15;
+  
+}
+
+.elements-social .element-social i{
+  color: rgb(184, 184, 184);
+  font-size: 50px;
+}
+.elements-social .element-social a{
+  text-align: center;
+  display: block;
+  margin: 10px;
 }
 
 @media(max-width: 1600px){
   .elements-social {
-    
     justify-content: center;
     margin-top: 10vh;
   }

@@ -213,7 +213,7 @@ Glitch.prototype.glitch = function(){
 	let ctx = this;
 	let interval= setInterval(function(){
         ctx.update(this);
-      },this.timePerLetter);
+        },this.timePerLetter);
 }
 
 var arrayElements;
