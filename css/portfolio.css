@@ -1,16 +1,23 @@
+@font-face {
+	font-family: 'luciole';
+	src: url("/font/Luciole-Regular.ttf") format(‘truetype’)
+}
+
+
 .main-content {
-    overflow: scroll;
     height: 100%;
 }
 
 .portfolio {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 1300px;
 }
 
 .portfolio-grid {
-    max-width: 1300px;
     /* height: 100vh; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,6 +29,9 @@
     letter-spacing: 10px;
     position: relative;
     display: inline-block;
+    font-family: 'luciole', serif;
+    align-self: flex-start;
+    margin-left: 100px;
 }
 
 .portfolio-title::after {
@@ -69,6 +79,8 @@
         letter-spacing: 4px;
         padding-bottom: 10px;
         border-bottom: 1px solid #fff;
+        align-self: center;
+        margin-left: 0;
     }
 
     .portfolio-title::after {
