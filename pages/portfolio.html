@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio MAHN</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="../css/portfolio.css">
+    <script src="../js/portfolio.js"></script>
     
 
 
 </head>
 <body>
+
+    <div class="loader">
+        <ul class="hexagon-container">
+          <li class="hexagon hex_1"></li>
+          <li class="hexagon hex_2"></li>
+          <li class="hexagon hex_3"></li>
+          <li class="hexagon hex_4"></li>
+          <li class="hexagon hex_5"></li>
+          <li class="hexagon hex_6"></li>
+          <li class="hexagon hex_7"></li>
+        </ul>
+      </div>
+
     <main role="main" class="main-content" id="main-content">
         <canvas id="noise" class="noise"></canvas>
         <div class="vignette"></div>
@@ -25,20 +39,38 @@
             <div class="menu-toggle"></div>
             <nav>
                 <ul>
-                    <li><a href="#">A Propos de moi</a></li>
+                    <li><a href="">A Propos de moi</a></li>
                     <li><a href="#" class="active">Portfolio</a></li>
-                    <li><a href="#">Competences</a></li>
+                    <li><a href="../pages/competence.html">Competences</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="clearfix"></div>
         </header>
 
-        <!-- Mise en place du portfolio-->
+        <h3 class="portfolio-title">#Portfolio</h3>
 
+        
+        <!-- Portfolio Carousel 3D -->
+        <div id="carousel">
+            <figure id="spinner">
+                <img src="../images/portfolio/portfolio-1.jpg" alt>
+                <img src="../images/portfolio/portfolio-2.jpg" alt>
+                <img src="../images/portfolio/portfolio-3.jpg" alt>
+                <img src="../images/portfolio/portfolio-4.jpg" alt>
+                <img src="../images/portfolio/portfolio-6.jpg" alt>
+                <img src="../images/portfolio/portfolio-8.jpg" alt>
+                <img src="../images/portfolio/portfolio-14.jpg" alt>
+                <img src="../images/portfolio/portfolio-13.jpg" alt>
+                <img src="../images/portfolio/portfolio-12.jpg" alt>
+            </figure>
+        </div>
+        <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+        <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+        <!-- Mise en place du portfolio-->
         <div class="portfolio">
 
-            <h3 class="portfolio-title">#Portfolio</h3>
             <p class="portfolio-description"></p>
             
             <div class="portfolio-grid">
@@ -80,5 +112,6 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"></script>
 <script src="../js/global.js"></script>
+<script src="../js/loader.js"></script>
 
 </html>
