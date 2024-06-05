@@ -1,738 +1,737 @@
 /*  ROOT  */
 
-
 @font-face {
-	font-family: 'luciole';
-	src: url("/font/Luciole-Regular.ttf") format(‘truetype’)
+  font-family: "luciole";
+  src: url("/font/Luciole-Regular.ttf") format(‘truetype’);
 }
-
 
 body {
-    margin: 0;
+  margin: 0;
 }
-
-
-
 
 /* DEFAULT */
 
 .main-content {
-    overflow:hidden;
-      position: relative;      
-      height: 100vh;
-      /* background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%); */
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  /* background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%); */
 
-      /* background: rgb(0,0,0);
+  /* background: rgb(0,0,0);
       background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(78,78,78,1) 27%, rgba(27,27,27,1) 100%); */
 
-      /* background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  /* background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
       background-size:cover; */
 
-      /* background-image: url("../images/back2.jpg");
+  /* background-image: url("../images/back2.jpg");
       background-size:cover; */
 
-      /* background-image: url("../images/back1bis.jpg");
+  /* background-image: url("../images/back1bis.jpg");
       background-size:cover; */
-      background-image: repeating-linear-gradient(60deg, #000 0px, #222 2px, #000 4px);
+  background-image: repeating-linear-gradient(
+    60deg,
+    #000 0px,
+    #222 2px,
+    #000 4px
+  );
 
-      color: #fff;
-  }
-  
-  .vignette{
-    position:absolute;
-    width:100%; height:100%;
-    box-shadow:inset 0px 0px 150px 20px black;
-    mix-blend-mode: multiply;
-    -webkit-animation: vignette-anim 3s infinite; /* Safari 4+ */
-    -moz-animation:    vignette-anim 3s infinite; /* Fx 5+ */
-    -o-animation:      vignette-anim 3s infinite; /* Opera 12+ */
-    animation:         vignette-anim 3s infinite; /* IE 10+, Fx 29+ */
-  }
-  
-  .noise {
-      z-index: 100;
-      position: absolute;
-      top: 0;
-      left: 0;
-      
-      width: 100%;
-      height: 100%;
-      
-      pointer-events: none;
-      opacity: .15;
-  }
-  
-  .line{
-    position:absolute;
-    height:100%; width:1px;
-    opacity:0.1;
-    background-color:#000;
-  }
-  
-  .titleCont{position:relative;}
-  
-  .main-title {
-      
-      font-size: 40px;
-      color: white;
-      font-family: 'Bellefair', serif;
-      position:relative;
-      line-height:1.3;
-      
-  }
-  
-  .overTitle{
-      position:absolute;
-      top:0;
-      left:0;
-  }
-  
-  .dot{
-    width:3px;
-    height:2px;
-    background-color:white;
-    position:absolute;
-    opacity:0.3;
-  }
-  
-  
-  @-webkit-keyframes vignette-anim {
-    0%   , 100%{ opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-  @-moz-keyframes vignette-anim {
-    0%   , 100%{ opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-  @-o-keyframes vignette-anim {
-    0%   , 100%{ opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-  @keyframes vignette-anim {
-    0%   , 100%{ opacity: 1; }
-    50% { opacity: 0.7; }
-  }
+  color: #fff;
+}
 
+.vignette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 150px 20px black;
+  mix-blend-mode: multiply;
+  -webkit-animation: vignette-anim 3s infinite; /* Safari 4+ */
+  -moz-animation: vignette-anim 3s infinite; /* Fx 5+ */
+  -o-animation: vignette-anim 3s infinite; /* Opera 12+ */
+  animation: vignette-anim 3s infinite; /* IE 10+, Fx 29+ */
+}
 
+.noise {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
 
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+.line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  opacity: 0.1;
+  background-color: #000;
+}
+
+.titleCont {
+  position: relative;
+}
+
+.main-title {
+  font-size: 40px;
+  color: white;
+  font-family: "Bellefair", serif;
+  position: relative;
+  line-height: 1.3;
+}
+
+.overTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dot {
+  width: 3px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-o-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
 
 /* GLICH */
 
 .hero-container {
-    position: absolute;
-    left: -50px;
-    bottom: -50px;
-    rotate: 5deg;
-    opacity: 0.3;
-    font-family: "Rubik Glitch", system-ui;
-
-    
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  rotate: 5deg;
+  opacity: 0.3;
+  font-family: "Rubik Glitch", system-ui;
 }
 .hero {
-    font-size: clamp(40px, 7vw, 80px);
-    line-height: 1;
-    display: inline-block;
-    color: rgba(71, 71, 71, 0.5);
-    z-index: 2;
-    letter-spacing: 10px;
-    filter: drop-shadow(0 1px 3px);
-    margin: 0;
-  }
-  
-  .layers {
-    position: relative;
-  }
-  
-  .layers::before,
-  .layers::after {
-    content: attr(data-text);
-    position: absolute;
-    width: 110%;
-    z-index: -1;
-  }
-  
-  .layers::before {
-    top: 10px;
-    left: 15px;
-    color: #e0287d;
-  }
-  
-  .layers::after {
-    top: 5px;
-    left: -10px;
-    color: #1bc7fb;
-  }
-  
-  .single-path {
+  font-size: clamp(40px, 7vw, 80px);
+  line-height: 1;
+  display: inline-block;
+  color: rgba(71, 71, 71, 0.5);
+  z-index: 2;
+  letter-spacing: 10px;
+  filter: drop-shadow(0 1px 3px);
+  margin: 0;
+}
+
+.layers {
+  position: relative;
+}
+
+.layers::before,
+.layers::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 110%;
+  z-index: -1;
+}
+
+.layers::before {
+  top: 10px;
+  left: 15px;
+  color: #e0287d;
+}
+
+.layers::after {
+  top: 5px;
+  left: -10px;
+  color: #1bc7fb;
+}
+
+.single-path {
+  clip-path: polygon(
+    0% 12%,
+    53% 12%,
+    53% 26%,
+    25% 26%,
+    25% 86%,
+    31% 86%,
+    31% 0%,
+    53% 0%,
+    53% 84%,
+    92% 84%,
+    92% 82%,
+    70% 82%,
+    70% 29%,
+    78% 29%,
+    78% 65%,
+    69% 65%,
+    69% 66%,
+    77% 66%,
+    77% 45%,
+    85% 45%,
+    85% 26%,
+    97% 26%,
+    97% 28%,
+    84% 28%,
+    84% 34%,
+    54% 34%,
+    54% 89%,
+    30% 89%,
+    30% 58%,
+    83% 58%,
+    83% 5%,
+    68% 5%,
+    68% 36%,
+    62% 36%,
+    62% 1%,
+    12% 1%,
+    12% 34%,
+    60% 34%,
+    60% 57%,
+    98% 57%,
+    98% 83%,
+    1% 83%,
+    1% 53%,
+    91% 53%,
+    91% 84%,
+    8% 84%,
+    8% 83%,
+    4% 83%
+  );
+}
+
+.paths {
+  animation: paths 5s step-end infinite;
+}
+
+@keyframes paths {
+  0% {
     clip-path: polygon(
-      0% 12%,
-      53% 12%,
-      53% 26%,
-      25% 26%,
-      25% 86%,
-      31% 86%,
-      31% 0%,
-      53% 0%,
-      53% 84%,
-      92% 84%,
-      92% 82%,
-      70% 82%,
-      70% 29%,
-      78% 29%,
-      78% 65%,
-      69% 65%,
-      69% 66%,
-      77% 66%,
-      77% 45%,
-      85% 45%,
-      85% 26%,
-      97% 26%,
-      97% 28%,
-      84% 28%,
-      84% 34%,
-      54% 34%,
-      54% 89%,
-      30% 89%,
-      30% 58%,
-      83% 58%,
-      83% 5%,
-      68% 5%,
-      68% 36%,
-      62% 36%,
-      62% 1%,
-      12% 1%,
-      12% 34%,
-      60% 34%,
-      60% 57%,
-      98% 57%,
-      98% 83%,
-      1% 83%,
-      1% 53%,
-      91% 53%,
-      91% 84%,
-      8% 84%,
-      8% 83%,
-      4% 83%
+      0% 43%,
+      83% 43%,
+      83% 22%,
+      23% 22%,
+      23% 24%,
+      91% 24%,
+      91% 26%,
+      18% 26%,
+      18% 83%,
+      29% 83%,
+      29% 17%,
+      41% 17%,
+      41% 39%,
+      18% 39%,
+      18% 82%,
+      54% 82%,
+      54% 88%,
+      19% 88%,
+      19% 4%,
+      39% 4%,
+      39% 14%,
+      76% 14%,
+      76% 52%,
+      23% 52%,
+      23% 35%,
+      19% 35%,
+      19% 8%,
+      36% 8%,
+      36% 31%,
+      73% 31%,
+      73% 16%,
+      1% 16%,
+      1% 56%,
+      50% 56%,
+      50% 8%
     );
   }
-  
-  .paths {
-    animation: paths 5s step-end infinite;
-  }
-  
-  @keyframes paths {
-    0% {
-      clip-path: polygon(
-        0% 43%,
-        83% 43%,
-        83% 22%,
-        23% 22%,
-        23% 24%,
-        91% 24%,
-        91% 26%,
-        18% 26%,
-        18% 83%,
-        29% 83%,
-        29% 17%,
-        41% 17%,
-        41% 39%,
-        18% 39%,
-        18% 82%,
-        54% 82%,
-        54% 88%,
-        19% 88%,
-        19% 4%,
-        39% 4%,
-        39% 14%,
-        76% 14%,
-        76% 52%,
-        23% 52%,
-        23% 35%,
-        19% 35%,
-        19% 8%,
-        36% 8%,
-        36% 31%,
-        73% 31%,
-        73% 16%,
-        1% 16%,
-        1% 56%,
-        50% 56%,
-        50% 8%
-      );
-    }
-  
-    5% {
-      clip-path: polygon(
-        0% 29%,
-        44% 29%,
-        44% 83%,
-        94% 83%,
-        94% 56%,
-        11% 56%,
-        11% 64%,
-        94% 64%,
-        94% 70%,
-        88% 70%,
-        88% 32%,
-        18% 32%,
-        18% 96%,
-        10% 96%,
-        10% 62%,
-        9% 62%,
-        9% 84%,
-        68% 84%,
-        68% 50%,
-        52% 50%,
-        52% 55%,
-        35% 55%,
-        35% 87%,
-        25% 87%,
-        25% 39%,
-        15% 39%,
-        15% 88%,
-        52% 88%
-      );
-    }
-  
-    30% {
-      clip-path: polygon(
-        0% 53%,
-        93% 53%,
-        93% 62%,
-        68% 62%,
-        68% 37%,
-        97% 37%,
-        97% 89%,
-        13% 89%,
-        13% 45%,
-        51% 45%,
-        51% 88%,
-        17% 88%,
-        17% 54%,
-        81% 54%,
-        81% 75%,
-        79% 75%,
-        79% 76%,
-        38% 76%,
-        38% 28%,
-        61% 28%,
-        61% 12%,
-        55% 12%,
-        55% 62%,
-        68% 62%,
-        68% 51%,
-        0% 51%,
-        0% 92%,
-        63% 92%,
-        63% 4%,
-        65% 4%
-      );
-    }
-  
-    45% {
-      clip-path: polygon(
-        0% 33%,
-        2% 33%,
-        2% 69%,
-        58% 69%,
-        58% 94%,
-        55% 94%,
-        55% 25%,
-        33% 25%,
-        33% 85%,
-        16% 85%,
-        16% 19%,
-        5% 19%,
-        5% 20%,
-        79% 20%,
-        79% 96%,
-        93% 96%,
-        93% 50%,
-        5% 50%,
-        5% 74%,
-        55% 74%,
-        55% 57%,
-        96% 57%,
-        96% 59%,
-        87% 59%,
-        87% 65%,
-        82% 65%,
-        82% 39%,
-        63% 39%,
-        63% 92%,
-        4% 92%,
-        4% 36%,
-        24% 36%,
-        24% 70%,
-        1% 70%,
-        1% 43%,
-        15% 43%,
-        15% 28%,
-        23% 28%,
-        23% 71%,
-        90% 71%,
-        90% 86%,
-        97% 86%,
-        97% 1%,
-        60% 1%,
-        60% 67%,
-        71% 67%,
-        71% 91%,
-        17% 91%,
-        17% 14%,
-        39% 14%,
-        39% 30%,
-        58% 30%,
-        58% 11%,
-        52% 11%,
-        52% 83%,
-        68% 83%
-      );
-    }
-  
-    76% {
-      clip-path: polygon(
-        0% 26%,
-        15% 26%,
-        15% 73%,
-        72% 73%,
-        72% 70%,
-        77% 70%,
-        77% 75%,
-        8% 75%,
-        8% 42%,
-        4% 42%,
-        4% 61%,
-        17% 61%,
-        17% 12%,
-        26% 12%,
-        26% 63%,
-        73% 63%,
-        73% 43%,
-        90% 43%,
-        90% 67%,
-        50% 67%,
-        50% 41%,
-        42% 41%,
-        42% 46%,
-        50% 46%,
-        50% 84%,
-        96% 84%,
-        96% 78%,
-        49% 78%,
-        49% 25%,
-        63% 25%,
-        63% 14%
-      );
-    }
-  
-    90% {
-      clip-path: polygon(
-        0% 41%,
-        13% 41%,
-        13% 6%,
-        87% 6%,
-        87% 93%,
-        10% 93%,
-        10% 13%,
-        89% 13%,
-        89% 6%,
-        3% 6%,
-        3% 8%,
-        16% 8%,
-        16% 79%,
-        0% 79%,
-        0% 99%,
-        92% 99%,
-        92% 90%,
-        5% 90%,
-        5% 60%,
-        0% 60%,
-        0% 48%,
-        89% 48%,
-        89% 13%,
-        80% 13%,
-        80% 43%,
-        95% 43%,
-        95% 19%,
-        80% 19%,
-        80% 85%,
-        38% 85%,
-        38% 62%
-      );
-    }
-  
-    1%,
-    7%,
-    33%,
-    47%,
-    78%,
-    93% {
-      clip-path: none;
-    }
-  }
-  
-  .movement {
-    
-    position: relative;
-    animation: movement 8s step-end infinite;
-  }
-  
-  @keyframes movement {
-    0% {
-      top: 0px;
-      left: -20px;
-    }
-  
-    15% {
-      top: 10px;
-      left: 10px;
-    }
-  
-    60% {
-      top: 5px;
-      left: -10px;
-    }
-  
-    75% {
-      top: -5px;
-      left: 20px;
-    }
-  
-    100% {
-      top: 10px;
-      left: 5px;
-    }
-  }
-  
-  .opacity {
-    animation: opacity 5s step-end infinite;
-  }
-  
-  @keyframes opacity {
-    0% {
-      opacity: 0.1;
-    }
-  
-    5% {
-      opacity: 0.7;
-    }
-  
-    30% {
-      opacity: 0.4;
-    }
-  
-    45% {
-      opacity: 0.6;
-    }
-  
-    76% {
-      opacity: 0.4;
-    }
-  
-    90% {
-      opacity: 0.8;
-    }
-  
-    1%,
-    7%,
-    33%,
-    47%,
-    78%,
-    93% {
-      opacity: 0;
-    }
-  }
-  
-  .font {
-    animation: font 7s step-end infinite;
-  }
-  
-  @keyframes font {
-    0% {
-      font-weight: 100;
-      color: #01003f;
-      filter: blur(3px);
-    }
-  
-    20% {
-      font-weight: 500;
-      color: #858585;
-      filter: blur(0);
-    }
-  
-    50% {
-      font-weight: 300;
-      color: #010011;
-      filter: blur(2px);
-    }
-  
-    60% {
-      font-weight: 700;
-      color: #fff;
-      filter: blur(0);
-    }
-  
-    90% {
-      font-weight: 500;
-      color: #000879;
-      filter: blur(6px);
-    }
-  }
-  
-  .glitch span {
-    animation: paths 5s step-end infinite;
-  }
-  
-  .glitch::before {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-      font 8s step-end infinite, movement 10s step-end infinite;
-  }
-  
-  .glitch::after {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-      font 7s step-end infinite, movement 8s step-end infinite;
-  }
-  
-  
 
-  
-  /* MENU RESPONSIVE */
+  5% {
+    clip-path: polygon(
+      0% 29%,
+      44% 29%,
+      44% 83%,
+      94% 83%,
+      94% 56%,
+      11% 56%,
+      11% 64%,
+      94% 64%,
+      94% 70%,
+      88% 70%,
+      88% 32%,
+      18% 32%,
+      18% 96%,
+      10% 96%,
+      10% 62%,
+      9% 62%,
+      9% 84%,
+      68% 84%,
+      68% 50%,
+      52% 50%,
+      52% 55%,
+      35% 55%,
+      35% 87%,
+      25% 87%,
+      25% 39%,
+      15% 39%,
+      15% 88%,
+      52% 88%
+    );
+  }
 
-  header{
-    position: relative;
-    max-width: 1600px;
-    margin: 20px auto;
-    padding: 10px;
-    
-    box-sizing: border-box;
-    border: 1px solid rgb(184, 184, 184);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-family: "luciole", sans-serif;
+  30% {
+    clip-path: polygon(
+      0% 53%,
+      93% 53%,
+      93% 62%,
+      68% 62%,
+      68% 37%,
+      97% 37%,
+      97% 89%,
+      13% 89%,
+      13% 45%,
+      51% 45%,
+      51% 88%,
+      17% 88%,
+      17% 54%,
+      81% 54%,
+      81% 75%,
+      79% 75%,
+      79% 76%,
+      38% 76%,
+      38% 28%,
+      61% 28%,
+      61% 12%,
+      55% 12%,
+      55% 62%,
+      68% 62%,
+      68% 51%,
+      0% 51%,
+      0% 92%,
+      63% 92%,
+      63% 4%,
+      65% 4%
+    );
+  }
 
+  45% {
+    clip-path: polygon(
+      0% 33%,
+      2% 33%,
+      2% 69%,
+      58% 69%,
+      58% 94%,
+      55% 94%,
+      55% 25%,
+      33% 25%,
+      33% 85%,
+      16% 85%,
+      16% 19%,
+      5% 19%,
+      5% 20%,
+      79% 20%,
+      79% 96%,
+      93% 96%,
+      93% 50%,
+      5% 50%,
+      5% 74%,
+      55% 74%,
+      55% 57%,
+      96% 57%,
+      96% 59%,
+      87% 59%,
+      87% 65%,
+      82% 65%,
+      82% 39%,
+      63% 39%,
+      63% 92%,
+      4% 92%,
+      4% 36%,
+      24% 36%,
+      24% 70%,
+      1% 70%,
+      1% 43%,
+      15% 43%,
+      15% 28%,
+      23% 28%,
+      23% 71%,
+      90% 71%,
+      90% 86%,
+      97% 86%,
+      97% 1%,
+      60% 1%,
+      60% 67%,
+      71% 67%,
+      71% 91%,
+      17% 91%,
+      17% 14%,
+      39% 14%,
+      39% 30%,
+      58% 30%,
+      58% 11%,
+      52% 11%,
+      52% 83%,
+      68% 83%
+    );
+  }
 
+  76% {
+    clip-path: polygon(
+      0% 26%,
+      15% 26%,
+      15% 73%,
+      72% 73%,
+      72% 70%,
+      77% 70%,
+      77% 75%,
+      8% 75%,
+      8% 42%,
+      4% 42%,
+      4% 61%,
+      17% 61%,
+      17% 12%,
+      26% 12%,
+      26% 63%,
+      73% 63%,
+      73% 43%,
+      90% 43%,
+      90% 67%,
+      50% 67%,
+      50% 41%,
+      42% 41%,
+      42% 46%,
+      50% 46%,
+      50% 84%,
+      96% 84%,
+      96% 78%,
+      49% 78%,
+      49% 25%,
+      63% 25%,
+      63% 14%
+    );
+  }
+
+  90% {
+    clip-path: polygon(
+      0% 41%,
+      13% 41%,
+      13% 6%,
+      87% 6%,
+      87% 93%,
+      10% 93%,
+      10% 13%,
+      89% 13%,
+      89% 6%,
+      3% 6%,
+      3% 8%,
+      16% 8%,
+      16% 79%,
+      0% 79%,
+      0% 99%,
+      92% 99%,
+      92% 90%,
+      5% 90%,
+      5% 60%,
+      0% 60%,
+      0% 48%,
+      89% 48%,
+      89% 13%,
+      80% 13%,
+      80% 43%,
+      95% 43%,
+      95% 19%,
+      80% 19%,
+      80% 85%,
+      38% 85%,
+      38% 62%
+    );
+  }
+
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    clip-path: none;
+  }
 }
-.logo{
-    color: rgb(184, 184, 184);
-    height: 60px;
-    font-size: 36px;
-    line-height: 60px;
-    padding: 0 20px;
-    text-align: center;
-    box-sizing: border-box;
-    float: left;
+
+.movement {
+  position: relative;
+  animation: movement 8s step-end infinite;
+}
+
+@keyframes movement {
+  0% {
+    top: 0px;
+    left: -20px;
+  }
+
+  15% {
+    top: 10px;
+    left: 10px;
+  }
+
+  60% {
+    top: 5px;
+    left: -10px;
+  }
+
+  75% {
+    top: -5px;
+    left: 20px;
+  }
+
+  100% {
+    top: 10px;
+    left: 5px;
+  }
+}
+
+.opacity {
+  animation: opacity 5s step-end infinite;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+
+  5% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 0.4;
+  }
+
+  45% {
+    opacity: 0.6;
+  }
+
+  76% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    opacity: 0;
+  }
+}
+
+.font {
+  animation: font 7s step-end infinite;
+}
+
+@keyframes font {
+  0% {
+    font-weight: 100;
+    color: #01003f;
+    filter: blur(3px);
+  }
+
+  20% {
+    font-weight: 500;
+    color: #858585;
+    filter: blur(0);
+  }
+
+  50% {
+    font-weight: 300;
+    color: #010011;
+    filter: blur(2px);
+  }
+
+  60% {
     font-weight: 700;
-    text-decoration: none;
+    color: #fff;
+    filter: blur(0);
+  }
+
+  90% {
+    font-weight: 500;
+    color: #000879;
+    filter: blur(6px);
+  }
 }
-nav{
-    float: right;
+
+.glitch span {
+  animation: paths 5s step-end infinite;
 }
-.clearfix{
-    clear: both;
+
+.glitch::before {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 8s step-end infinite, movement 10s step-end infinite;
 }
-nav ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+.glitch::after {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 7s step-end infinite, movement 8s step-end infinite;
 }
-nav ul li{
-    list-style: none;
+
+/* MENU RESPONSIVE */
+
+header {
+  position: relative;
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 10px;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "luciole", sans-serif;
 }
-nav ul li a{
-    
-    display: block;
-    margin: 10px 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: rgb(184, 184, 184);
-    font-weight: 700;
-    
-    
+.logo {
+  color: rgb(184, 184, 184);
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(184, 184, 184);
+  font-weight: 700;
 }
 nav ul li a.active,
-nav ul li a:hover{
-    border:  1px solid rgb(184, 184, 184);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.5s;
-    
+nav ul li a:hover {
+  border: 1px solid rgb(184, 184, 184);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.5s;
 }
 
-
-@media(max-width: 1200px){
-    header{
-        margin: 20px;
-    }
+@media (max-width: 1200px) {
+  header {
+    margin: 20px;
+  }
 }
-@media(max-width: 768px){
-    .menu-toggle{
-        display: block;
-        width: 40px;
-        height: 40px;
-        margin: 10px;
-        float: right;
-        cursor: pointer;
-        text-align: center;
-        font-size: 30px;
-        color: rgb(184, 184, 184);
-    }
-    .menu-toggle:before{
-        content: '≡';
-        line-height: 40px;
-    }
-    .menu-toggle.active:before{
-        content: '≡';
-    }
-    nav{
-        display: none;
-    }
-    nav.active{
-        display: block;
-        width: 100%;
-    }
-    nav.active ul{
-        display: block;
-    }
-    nav.active ul li{
-        margin: 0;
-    }
-    nav.active ul li a {
-      margin: 20px 5px;
-    }
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(184, 184, 184);
+  }
+  .menu-toggle:before {
+    content: "≡";
+    line-height: 40px;
+  }
+  .menu-toggle.active:before {
+    content: "≡";
+  }
+  nav {
+    display: none;
+  }
+  nav.active {
+    display: block;
+    width: 100%;
+  }
+  nav.active ul {
+    display: block;
+  }
+  nav.active ul li {
+    margin: 0;
+  }
+  nav.active ul li a {
+    margin: 20px 5px;
+  }
 }
-
-
 
 /*   TIPING SCRIPT  */
 
-
 #table {
-	display: table;
+  display: table;
   color: rgb(184, 184, 184);
   font-weight: 800;
   width: 100%;
   display: flex;
   justify-content: end;
-  
-    
 }
 
 #presentation-text {
-	display: table-cell;
-	vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
   text-align: end;
- /* border: 1px solid rgb(184, 184, 184); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* border: 1px solid rgb(184, 184, 184); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   margin: 20px auto;
   max-width: 1600px;
   width: 100%;
-  
+
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
   overflow: hidden;
 }
 
-
-@media(max-width: 1600px){
+@media (max-width: 1600px) {
   #presentation-text {
     text-align: center;
   }
@@ -746,10 +745,9 @@ nav ul li a:hover{
   left: 300px;
   z-index: 10;
   width: clamp(100px, 40vw, 800px);
-
 }
 
-@media(max-width: 1600px){
+@media (max-width: 1600px) {
   .main-image {
     display: none;
   }
@@ -757,7 +755,6 @@ nav ul li a:hover{
     width: 100%;
   }
 }
-
 
 /* element social */
 
@@ -775,20 +772,19 @@ nav ul li a:hover{
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 15;
-  
 }
 
-.elements-social .element-social i{
+.elements-social .element-social i {
   color: rgb(184, 184, 184);
   font-size: 50px;
 }
-.elements-social .element-social a{
+.elements-social .element-social a {
   text-align: center;
   display: block;
   margin: 10px;
 }
 
-@media(max-width: 1600px){
+@media (max-width: 1600px) {
   .elements-social {
     justify-content: center;
     margin-top: 10vh;
