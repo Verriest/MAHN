@@ -15,6 +15,9 @@ body {
 
 .main-content {
   box-sizing: border-box;
+  height: 100%;
+
+  overflow: auto !important ;
 }
 
 /* Section des compétences */
@@ -84,8 +87,12 @@ body {
     #222 2px,
     #000 4px
   );
-  margin: 2rem; /* Marges autour de la timeline */
-  padding-bottom: 10rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.timeline_title_div {
   display: flex;
   justify-content: center;
 }
@@ -99,7 +106,6 @@ body {
 .card {
   position: relative;
   max-width: 400px;
-  margin-bottom: 2rem; /* Espace entre les cartes */
 }
 
 .card:nth-child(odd) {
@@ -122,7 +128,6 @@ body {
   top: -4.5px;
   bottom: -4.5px;
   border-width: 5px 0 5px 5px;
-  border-radius: 50px 0 0 50px;
 }
 
 @media only screen and (max-width: 400px) {
