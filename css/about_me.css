@@ -1,0 +1,73 @@
+/* styles.css */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+} */
+
+.main-content {
+    overflow: auto;
+    height: 100%;
+    
+}
+
+.container_about {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: gray;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    font-family: "luciole", sans-serif;
+}
+
+
+
+.about-me {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-me>div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+   
+}
+.about-me .about_me_img {
+   display: block;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    position: sticky;
+    top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "luciole", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "luciole", sans-serif;
+}
+
+.italic-red {
+    color: red;
+    font-style: italic;
+}
