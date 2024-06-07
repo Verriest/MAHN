@@ -6,6 +6,7 @@
 
 .main-content {
     max-height: 100%;
+    position: relative;
 }
 
 /* Carousel 3D */
@@ -50,6 +51,24 @@ div#carousel {
     border-bottom: none; 
     line-height: 0; }
   div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+
+  div#carousel ~ span.icon-left {
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translateY(50%);
+  }
+
+  div#carousel ~ span.icon-right {
+    display: block;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    transform: translateY(50%);
+  }
 
 
   /* Portfolio */
@@ -128,6 +147,11 @@ div#carousel {
     }
 
     #carousel {
+        display: none;
+    }
+        
+    div#carousel ~ span.icon-left,
+    div#carousel ~ span.icon-right {
         display: none;
     }
 

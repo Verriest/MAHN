@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortFolio MAHN</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
     <script src="../js/portfolio.js"></script>
-    
-
-
 </head>
-<body>
 
+<body>
     <div class="loader">
         <ul class="hexagon-container">
-          <li class="hexagon hex_1"></li>
-          <li class="hexagon hex_2"></li>
-          <li class="hexagon hex_3"></li>
-          <li class="hexagon hex_4"></li>
-          <li class="hexagon hex_5"></li>
-          <li class="hexagon hex_6"></li>
-          <li class="hexagon hex_7"></li>
+            <li class="hexagon hex_1"></li>
+            <li class="hexagon hex_2"></li>
+            <li class="hexagon hex_3"></li>
+            <li class="hexagon hex_4"></li>
+            <li class="hexagon hex_5"></li>
+            <li class="hexagon hex_6"></li>
+            <li class="hexagon hex_7"></li>
         </ul>
-      </div>
+    </div>
 
     <main role="main" class="main-content" id="main-content">
         <canvas id="noise" class="noise"></canvas>
         <div class="vignette"></div>
 
         <header>
-            <a href="../index.html" class="logo"><img src="../images/logo.png" style=" height: 120%; border: 1px solid white;"></a>
+            <a href="../index.html" class="logo"><img src="../images/logo.png"
+                    style="height: 120%; border: 1px solid white" /></a>
             <div class="menu-toggle"></div>
             <nav>
                 <ul>
@@ -50,67 +49,62 @@
 
         <h3 class="portfolio-title">#Portfolio</h3>
 
-        
         <!-- Portfolio Carousel 3D -->
         <div id="carousel">
             <figure id="spinner">
-                <img src="../images/portfolio/portfolio-1.jpg" alt>
-                <img src="../images/portfolio/portfolio-2.jpg" alt>
-                <img src="../images/portfolio/portfolio-3.jpg" alt>
-                <img src="../images/portfolio/portfolio-4.jpg" alt>
-                <img src="../images/portfolio/portfolio-6.jpg" alt>
-                <img src="../images/portfolio/portfolio-8.jpg" alt>
-                <img src="../images/portfolio/portfolio-14.jpg" alt>
-                <img src="../images/portfolio/portfolio-13.jpg" alt>
-                <img src="../images/portfolio/portfolio-12.jpg" alt>
+                <img src="../images/portfolio/portfolio-1.jpg" alt />
+                <img src="../images/portfolio/portfolio-2.jpg" alt />
+                <img src="../images/portfolio/portfolio-3.jpg" alt />
+                <img src="../images/portfolio/portfolio-4.jpg" alt />
+                <img src="../images/portfolio/portfolio-6.jpg" alt />
+                <img src="../images/portfolio/portfolio-8.jpg" alt />
+                <img src="../images/portfolio/portfolio-14.jpg" alt />
+                <img src="../images/portfolio/portfolio-13.jpg" alt />
+                <img src="../images/portfolio/portfolio-12.jpg" alt />
             </figure>
         </div>
-        <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-        <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+        <span class="ss-icon icon-left" onclick="galleryspin('-')">&lt;</span>
+        <span class="ss-icon icon-right" onclick="galleryspin('')">&gt;</span>
+
 
         <!-- Mise en place du portfolio-->
         <div class="portfolio">
-
             <p class="portfolio-description"></p>
-            
+
             <div class="portfolio-grid">
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-1.jpg" alt="Project 1">
+                    <img src="../images/portfolio/portfolio-1.jpg" alt="Project 1" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-2.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-2.jpg" alt="Project 2" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-3.jpg" alt="Project 3">
+                    <img src="../images/portfolio/portfolio-3.jpg" alt="Project 3" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-4.jpg" alt="Project 1">
+                    <img src="../images/portfolio/portfolio-4.jpg" alt="Project 1" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-6.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-6.jpg" alt="Project 2" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-8.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-8.jpg" alt="Project 2" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-14.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-14.jpg" alt="Project 2" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-13.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-13.jpg" alt="Project 2" />
                 </div>
                 <div class="project">
-                    <img src="../images/portfolio/portfolio-12.jpg" alt="Project 2">
+                    <img src="../images/portfolio/portfolio-12.jpg" alt="Project 2" />
                 </div>
             </div>
         </div>
-
-
     </main>
-
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"></script>
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="../js/global.js"></script>
 <script src="../js/loader.js"></script>
 
