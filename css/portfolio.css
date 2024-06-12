@@ -6,6 +6,7 @@
 
 .main-content {
     max-height: 100%;
+    position: relative;
 }
 
 /* Carousel 3D */
@@ -19,7 +20,7 @@ div#carousel {
   }
   figure#spinner { 
     transform-style: preserve-3d; 
-    height: 500px; 
+    height: 600px; 
     transform-origin: 50% 50% -500px; 
     transition: 1s; 
   } 
@@ -28,6 +29,7 @@ div#carousel {
     position: absolute; left: 30%;
     transform-origin: 50% 50% -500px;
     outline:1px solid transparent; 
+    cursor: pointer;
   }
   figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
   }
@@ -52,6 +54,24 @@ div#carousel {
   div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 
+
+  div#carousel ~ span.icon-left {
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    transform: translateY(50%);
+  }
+
+  div#carousel ~ span.icon-right {
+    display: block;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    transform: translateY(50%);
+  }
+
+
   /* Portfolio */
 .portfolio {
     margin: 0 auto;
@@ -69,14 +89,33 @@ div#carousel {
     padding: 20px;
 }
 
+.portfolio-content {
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.portfolio-text {
+    border: #fff 2px solid;
+    padding: 20px;
+    font-size: 16px;
+    align-self: center;
+    width: 60%;
+}
+
 .portfolio-title {
     font-size: 34px;
     letter-spacing: 10px;
     position: relative;
     display: inline-block;
-    font-family: 'luciole', serif;
     align-self: flex-start;
-    margin-left: 100px;
+    margin-left: 3%;
+    margin-right: auto;
 }
 
 .portfolio-title::after {
@@ -127,7 +166,16 @@ div#carousel {
         margin-left: 0;
     }
 
+    .portfolio-text {
+        width: 80%;
+    }
+
     #carousel {
+        display: none;
+    }
+        
+    div#carousel ~ span.icon-left,
+    div#carousel ~ span.icon-right {
         display: none;
     }
 
