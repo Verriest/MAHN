@@ -56,14 +56,12 @@ body {
 }
 
 /* Section des compétences */
-.competence {
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
 
 .competence_tableau {
   margin-bottom: 2rem;
   margin-right: 10rem;
+  background-image: url(../images/back2-removebg-preview.png);
+  background-repeat: no-repeat;
 }
 
 .competence_tableau_contenu {
@@ -159,7 +157,7 @@ td .contentTD {
 /* Section de la timeline */
 .timeline-title {
   text-align: center;
-  border: 3px solid #abb2bf; /* Bordure épaisse de 3px de couleur */
+  border: 2px solid #abb2bf; /* Bordure épaisse de 3px de couleur */
   padding: 10px; /* Padding pour le titre */
   margin: 20px auto; /* Marge auto pour centrer le titre horizontalement */
   display: inline-block;
@@ -191,7 +189,7 @@ td .contentTD {
 
 .card {
   position: relative;
-  max-width: 600px;
+  max-width: 40rem;
 }
 
 .card:nth-child(odd) {
@@ -280,4 +278,54 @@ td .contentTD {
 
 .card:nth-child(even) > .info > .title::before {
   right: -45px;
+}
+@media (max-width: 768px) {
+  .competence_tableau {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-image: none;
+    margin-top: 2rem;
+  }
+
+  .competence-title {
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+    position: relative;
+    display: inline-block;
+    font-family: "luciole", serif;
+    align-self: flex-start;
+    margin-left: 4rem;
+  }
+
+  .competence_tableau tbody td {
+    padding: 0.5rem; /* Réduire l'espacement interne sur les petits écrans */
+  }
+
+  .competence_tableau_contenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 2rem;
+  }
+
+  .competence_tableau_languages {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .competence_tableau_dataBase {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .competence_tableau_Frame {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .competence_tableau_tools {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .competence_tableau_other {
+    grid-area: 5 / 1 / 6 / 2;
+  }
 }
