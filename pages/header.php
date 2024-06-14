@@ -3,12 +3,6 @@
 <?php
 function afficherPageActive($name) {
   $currentPage = basename($_SERVER['PHP_SELF']);
-
-  // Vérifie si le name correspond au chemin de la page actuelle
-
-  echo "<div>".var_dump($currentPage)."</div>";
-  echo  "<div>".var_dump($name)."</div>";
-
   if($currentPage == $name) {
     return 'class="active"';
   }
@@ -43,10 +37,10 @@ function afficherPageActive($name) {
             <div class="menu-toggle"></div>
             <nav>
                 <ul>
-                    <li><a href="./about_me.php"  <?php afficherPageActive('about_me.php'); ?> >A Propos de moi</a></li>
-                    <li><a href="./portfolio.php">Portfolio</a></li>
-                    <li><a href="./competence.php" >Compétences</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="./about_me.php"  <?php echo afficherPageActive('about_me.php'); ?> >A Propos de moi</a></li>
+                    <li><a href="./portfolio.php" <?php echo afficherPageActive('portfolio.php'); ?>>Portfolio</a></li>
+                    <li><a href="./competence.php" <?php echo afficherPageActive('competence.php'); ?> >Compétences</a></li>
+                    <li><a href="./contact.php"    <?php echo afficherPageActive('contact.php'); ?>>Contact</a></li>
                 </ul>
             </nav>
             <div class="clearfix"></div>

@@ -46,7 +46,7 @@
                 <h1>Contact</h1>
                 <p></p>
                 
-                <form id="contact-form" method="post">
+                <form id="contact-form" method="post" action="https://formspree.io/f/mqkrrbkl">
                   <label for="name">Nom Complet</label>
               <input type="text" id="name" name="name" placeholder="Votre Nom Complet" required>
                   <label for="email">Addresse Email</label>

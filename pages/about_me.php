@@ -22,7 +22,7 @@
                         <?php include('header.php')?>
 
 
-      <h1 class="titre_a_propo">À propos de moi</h1>
+      <h2 class="titre_a_propo"># À Propos </h2>
       <div class="container_about">
         
         <div class="about-me">
@@ -43,6 +43,7 @@
             <p class="encadre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, autem architecto impedit quod laboriosam iusto dolor maiores facilis harum iste est obcaecati possimus consequuntur quidem quas doloribus unde quisquam minus?</p>
             <p class="encadre">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam quidem praesentium veritatis. Quos nobis nesciunt autem, corporis, architecto magni praesentium libero amet sed facere repudiandae excepturi, vitae exercitationem nam.</p>
             <!-- <p class="encadre">autem maxime vitae tempore quo cumque facilis itaque vel</p>-->
+            <img src="../images/tete6.png" alt="Votre image" class="profile-image" style="transform: scaleX(-1);">
           </div>
          <div class="colonneMilieu">
             <!--<video width="600" controls> 
@@ -50,7 +51,7 @@
           </video>
         </div>
           <div class="about_me_img">
-            <img src="../images/tete6.png" alt="Votre image" class="profile-image">
+            <img src="../images/tete7.png" alt="Votre image" class="profile-image">
             <p class="encadre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus sit et rerum aliquam dicta consectetur magni vero, possimus neque sequi cumque? In est aut unde id nostrum quia architecto.<a href="https://www.linkedin.com/in/a-rémy-bokini-68997678/"> Moi plus d'information.</a> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptas quod ad consequatur esse! Asperiores magni voluptatum eius repellendus sit. Doloremque suscipit id illo eius sint incidunt alias nulla consectetur?</p>
             <p class="encadre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quos. Minima aliquid a fugiat quia voluptatem necessitatibus quasi consectetur, rem fugit soluta numquam ullam dicta dolor in. Inventore, libero? Ullam.</p>
             <p class="encadre"><a href="https://remybokini.blogspot.com/2023/08/origine-du-levirat-en-afrique-de-louest.html" target="_blank"><b> UNE PUBLICATION SUR LE LEVIRAT : </b> </a> 

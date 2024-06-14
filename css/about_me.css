@@ -32,7 +32,7 @@
 
 
 .about-me {
-    max-width: 600px;
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     
@@ -77,12 +77,30 @@ p {
 
 }
 .titre_a_propo{
-    text-align: center;
-    color: aqua;
+    font-size: 34px;
+    letter-spacing: 10px;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 3%;
+    margin-right: auto;
+    font-family: "luciole", serif;
 }
 
+ .titre_a_propo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 18px;
+    left: 260px;
+} 
+
+
+
 .encadre {
-    border: 2px solid pink;
+    border: 1px solid aliceblue;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -92,3 +110,16 @@ p {
     color: red;
     font-style: italic;
 }
+
+a:link,
+a:visited {
+    color: white;
+    
+}
+
+
+@media (max-width: 764px) {
+    .about-me {
+        width: 100%;
+    }
+  }
