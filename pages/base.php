@@ -15,28 +15,8 @@
 
 </head>
 <body>
-
-    <main role="main" class="main-content" id="main-content">
-      <canvas id="noise" class="noise"></canvas>
-      <div class="vignette"></div>
-
-      <header>
-        <a href="" class="logo"
-          ><img
-            src="../images/logo.png"
-            style="height: 120%; border: 1px solid white"
-        /></a>
-        <div class="menu-toggle"></div>
-        <nav>
-          <ul>
-            <li><a href="#" class="active">A Propos de moi</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="./competence.html">Competences</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="clearfix"></div>
-      </header>
+<!-- INCLUSION HEADER  -->
+<?php include('header.php')?>
     </main>
   </body>
   <script
@@ -45,4 +25,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="../js/global.js"></script>
+  <script src="../js/loader.js"></script>
 </html>
