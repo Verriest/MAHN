@@ -214,6 +214,14 @@ td .contentTD {
   border-width: 5px 0 5px 5px;
 }
 
+@media (max-width: 1230px) {
+  .competence_tableau {
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+    background-image: none;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .card:nth-child(odd)::before {
     top: -5px;
@@ -327,5 +335,15 @@ td .contentTD {
 
   .competence_tableau_other {
     grid-area: 5 / 1 / 6 / 2;
+  }
+
+  @media (max-width: 425px) {
+    .card {
+      max-width: 20rem;
+    }
+
+    .competence-title {
+      position: unset;
+    }
   }
 }
